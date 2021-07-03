@@ -1,9 +1,8 @@
-import React from 'react';
-
-
 const App = () => {
+
+  throw new Error('Eita Giovana, o forninho caiu');
   return (
-    <h1>Hello World</h1>
+    <h1>Hello Motherfuckers</h1>
   )
 }
 
