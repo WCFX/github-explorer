@@ -1,6 +1,14 @@
 import "./styles.scss";
 
-const RepositoryItem = (props) => {
+interface RepositoryItemProps {
+  repository: {
+    name: String;
+    description: String;
+    html_url: String;
+  };
+}
+
+const RepositoryItem = (props: RepositoryItemProps) => {
   return (
     <li>
       <strong className="cap">{props.repository.name}</strong>
