@@ -30,7 +30,12 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: {
+          loader: "babel-loader",
+          options: [
+            isDevelopment && require.resolve("react-refresh/babel"),
+          ].filter(Boolean),
+        },
       },
       {
         test: /\.scss$/,
