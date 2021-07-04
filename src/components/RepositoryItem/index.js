@@ -1,9 +1,11 @@
+import "./styles.scss";
+
 const RepositoryItem = (props) => {
   return (
     <li>
-      <strong>{props.repository.name}</strong>
+      <strong className="cap">{props.repository.name}</strong>
       <p>{props.repository.description}</p>
-      <a href="/">{props.repository.link}</a>
+      <a href="/">{props.repository.html_url}</a>
     </li>
   );
 };
