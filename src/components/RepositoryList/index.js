@@ -4,12 +4,6 @@ import RepositoryItem from "../RepositoryItem";
 import "./styles.scss";
 
 const RepositoryList = () => {
-  const repository = {
-    name: "Unform",
-    description: "Forms in React",
-    link: "https://github.com/unform/unform",
-  };
-
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
